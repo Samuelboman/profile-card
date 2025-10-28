@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>profile-card</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
+
+
+</head>
+<body>
+  <div class="card">
+    <article data-testid="test-profile-card">
+    <figure class="avatar-section">
+      <img src="df.jpg" alt="" data-testid="test-user-avatar">
+    </figure>
+
+    <section class="info-section">
+      <h2 data-testid="test-username">Samuel Boman Elias</h2>
+      <p data-testid="test-user-bio"> A passionate frontend developer who loves building clean UI and learning new technologies. </p>
+      <p data-testid="test-user-time" class="time"></p>
+
+      <nav>
+        <ul data-testid="test-user-social-links" class="social-links">
+           <li><a href="https://x.com/samueljnr_boman" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">
+             <i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="https://github.com/Samuelboman" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">
+            <i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+            <i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <section data-testid="test-user-hobbies">
+        <h3>Hobbies</h3>
+        <ul class="hobbies-list">
+          <li data-testid="test-user-hobby-1">coding</li>
+          <li data-testid="test-user-hobby-2">watching movies</li>
+          <li data-testid="test-user-hobby-3">Gaming</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-user-dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li>procrastination</li>
+          <li>loud noises</li>
+        </ul>
+      </section>
+
+    </section>
+
+  </article>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

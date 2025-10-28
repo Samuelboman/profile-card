@@ -1,0 +1,134 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;   
+}
+
+body {
+  font-family: Arial, sans-serif, 'Poppins';
+  background-color: #588393;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} 
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  background: rgb(73, 61, 61);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.avatar-section img {
+  width: 80%;
+  height: auto;
+  border-bottom: 3px solid #007bff;
+  border-radius: 150px;;
+
+}
+
+.info-section {
+  padding: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0px;
+  border-top: 1px solid #eee;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.social-links a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: transform 0.2s, color 0.2s;
+  margin-top: 5px;
+}
+
+section ul {
+  list-style: circle inside;
+  margin-left: 1rem;
+  padding-left: 1rem;
+}
+
+social-links a:hoveer {
+  color: #0056b3;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.card {
+    display: flex;
+    background-color: #8fa0b4;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+  }
+
+.fa-x-twitter { color: #000000; }
+.fa-github { color: #181717; }
+.fa-linkedin { color: #0077b5; }
+
+
+@media (min-width: 600px) {
+  .profile-card {
+    flex-direction: row;
+    max-width: 700px;
+  }
+   
+
+  .avatar-section img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+  }
+
+  
+
+  .info-section {
+    flex: 1;
+  }
+  .time {
+    animation: glow 1.2s infinite alternate;
+  }
+
+}
+
+.time {
+  display: inline-block;
+  background-color: #000;
+  color: #0f0;
+  font-family: 'Orbitron', 'Courier New', monospace;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4), inset 0 0 10px rgba(0, 255, 0, 0.2);
+  margin-top: 12px;
+  text-align: center;
+  min-width: 180px;
+  transition: all 0.2s ease;
+}
+@keyframes glow {
+  0% { text-shadow: 0 0 4px #0f0; }
+  50% { text-shadow: 0 0 10px #0f0; }
+  100% { text-shadow: 0 0 4px #0f0; }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 1.2rem;
+    border-radius: 16px;
+  }
+}  
